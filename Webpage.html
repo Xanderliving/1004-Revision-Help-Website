@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner</title>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/randomiser.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="title">Work Planner</h1>
+    <FormA>
+        <!--Input-->
+        <fieldset>
+            <legend>Input Data</legend>
+            <form>
+                <input id="Subject" type="text" placeholder="Subject" autocomplete="off" /> <br />
+                <input id="Importance" type="number" placeholder="Importance" /> <br />
+                <input id="Due" type="date" placeholder="Due Date" /> <br />
+                <input type="button" id="btnInsert" onclick="onclick_submit()" value="Submit" />
+            </form>
+        </fieldset>
+        <!--Randomiser-->
+        <fieldset>
+            <legend>Randomiser</legend>
+            Press the button to get a
+            <br />random Subject and a random
+            <br />time to study
+            <br />
+            <!-- Dispays Random subjects -->
+            <input type="button" id="btnRandom" onclick="onclick_Randomiser()" value="Randomiser" />
+            <br />
+            <p id="RSubject"></p>
+            Random Time:<p id="RTime"></p>
+            <!-- Starts timer -->
+            <input type="button" id="btnCountdown" onclick="onclick_Countdown()" value="Start Timer" />
+            <div id="countdown"></div>
+        </fieldset>
+        <fieldset>
+            <!-- Gets infomartion for Shirleys' thing -->
+            <legend>Shirley's thing</legend>
+            <input id="Username" type="text" placeholder="Username" autocomplete="off" /> <br />
+            <input id="Application" type="text" placeholder="Application" /> <br />
+            <input id="PlayMins" type="number" placeholder="PlayMins" /> <br />
+            <input id="Score" type="number" placeholder="Score" /> <br />
+            <input id="Level" type="number" placeholder="Level" /> <br />
+            <input type="button" id="btnInsert2" onclick="onclick_submit2()" value="Submit2" />
+        </fieldset>
+    </FormA>
+    <!--Displays Information onto table-->
+    <fieldset>
+        <legend>Subject Table</legend>
+        <div class="lsOutput"></div>
+        <table id="myTable">
+            <tr>
+                <th>Subject</th>
+                <th>Importance</th>
+                <th>Due </th>
+            </tr>
+        </table>
+    </fieldset>
+
+</body>
+
+</html>
+

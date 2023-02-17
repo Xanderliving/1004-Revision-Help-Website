@@ -1,0 +1,50 @@
+﻿body {
+    background-color: azure;
+}
+.title {
+
+    color: darkblue;
+    font-size: 100px;
+    text-align: center;
+}
+.Background {
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    border: 15px solid lightgray;
+    padding: 10px;
+    margin: -10px;
+}
+
+FormA {
+    float: left;
+    min-width: 200px;
+    background: #ccc;
+    padding: 20px;
+    background: rgba(0, 0, 0, 5%);
+}
+table {
+    width: 95%;
+    margin: 0 auto
+}
+table td, table th {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+table tr:hover {
+        background-color: #ddd;
+    }
+
+table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: darkblue;
+        color: white;
+    }
